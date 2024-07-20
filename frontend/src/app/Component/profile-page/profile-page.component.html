@@ -261,7 +261,7 @@
           <div style="display: flex; justify-content: space-between">
               <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
                   <div class="userDetailHeading">Your name</div>
-                  <div class="userDetailInfo">{{ currentcustomer?.name || 'user' }}
+                  <div class="userDetailInfo">{{ currentcustomer?.name || '' }}
                     {{ currentname | json }}
                   </div>
               </div>
@@ -273,7 +273,9 @@
           <div style="display: flex; justify-content: space-between; margin-top: 5%">
               <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
                   <div class="userDetailHeading">Gender</div>
-                  <div class="userDetailInfo">{{ currentcustomer?.gender || '-' }}</div>
+                  <div class="userDetailInfo">{{ currentcustomer?.gender || '-' }}
+                    {{ currentgender | json }}
+                  </div>
               </div>
           </div>
           <div style="display: flex; justify-content: space-between; margin-top: 5%">
@@ -284,13 +286,15 @@
           <div style="display: flex; justify-content: space-between; margin-top: 5%">
               <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
                   <div class="userDetailHeading">Email</div>
-                  <div class="userDetailInfo">{{ currentcustomer?.email || '-' }}
+                  <div class="userDetailInfo">{{ currentcustomer?.email || '' }}
                     {{ currentemail | json }}
                   </div>
               </div>
               <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
                   <div class="userDetailHeading">Phone</div>
-                  <div class="userDetailInfo">{{ currentcustomer?.phoneNumber || '-' }}</div>
+                  <div class="userDetailInfo">{{ currentcustomer?.phoneNumber || '-' }}
+                    {{currentphoneNo | json }}
+                  </div>
               </div>
           </div>
       </div>

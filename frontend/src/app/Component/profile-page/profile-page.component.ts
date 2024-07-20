@@ -47,6 +47,8 @@ export class ProfilePageComponent implements OnInit{
   currentcustomer:any=[]
   currentname:string=''
   currentemail:string=''
+  currentgender:string=''
+  currentphoneNo:string=''
   mytrip:Booking[]=[]
   handlelistitemclick(selected:string):void{
     this.selecteditem=selected
@@ -57,6 +59,8 @@ export class ProfilePageComponent implements OnInit{
     const user=JSON.parse(this.currentcustomer)
     this.currentname=user.name;
     this.currentemail=user.email;
+    this.currentgender=user.gender;
+    this.currentphoneNo=user.phoneNo;
     this.busbooking.getbusmongo(user._id).subscribe((response:any)=>{
       this.mytrip=response
       console.log(this.mytrip)

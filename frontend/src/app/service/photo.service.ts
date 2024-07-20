@@ -32,7 +32,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class PhotoService {
-  private apiUrl = 'https://redbusclone-mean-1.onrender.com/api/photos';
+  private apiUrl = 'https://testredbus.onrender.com/api/photos';
 
   constructor(private http: HttpClient) {}
 

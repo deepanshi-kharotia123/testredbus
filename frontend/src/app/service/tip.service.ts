@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TipService {
-  private baseUrl = 'https://redbusclone-mean-1.onrender.com/tips';
-
+  //private baseUrl = 'https://redbusclone-mean-1.onrender.com/tips';
+private baseUrl = 'https://testredbus.onrender.com/tips'
   constructor(private http: HttpClient) { }
   getTips(): Observable<any> {
     return this.http.get<any[]>(this.baseUrl);

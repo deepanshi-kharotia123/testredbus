@@ -6,7 +6,7 @@ import { url } from '../config';
   providedIn: 'root'
 })
 export class StoryService {
-  private baseUrl = 'https://redbusclone-mean-1.onrender.com/stories'
+  private baseUrl = 'https://testredbus.onrender.com/stories'
   constructor(private http: HttpClient) { }
 
   getStories(): Observable<any[]> {

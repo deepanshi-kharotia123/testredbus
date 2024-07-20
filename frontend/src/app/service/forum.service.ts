@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ForumService {
-  private baseUrl = 'https://redbusclone-mean-1.onrender.com/forums';
+  private baseUrl = 'https://testredbus.onrender.com/forums';
   constructor(private http: HttpClient) { }
   getForums(): Observable<any> {
     return this.http.get<any[]>(this.baseUrl);
